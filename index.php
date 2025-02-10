@@ -78,13 +78,13 @@
 
       <!-- Sidebar -->
       <div class="sidebar navbar navbar-expand-lg navbar-light">
-        <a href="#" class="active"><i data-lucide="home"></i></a>
-        <a href="#"><i data-lucide="user"></i></a>
-        <a href="#"><i data-lucide="school"></i></a>
-        <a href="#"><i data-lucide="layers"></i></a>
-        <a href="#"><i data-lucide="briefcase"></i></a>
-        <a href="#"><i data-lucide="cpu"></i></a>
-        <a href="#"><i data-lucide="mail"></i></a>
+        <a href="index.php" class="active"><i data-lucide="home"></i></a>
+        <a href="about.php"><i data-lucide="user"></i></a>
+        <a href="education.php"><i data-lucide="school"></i></a>
+        <a href="Specialization.php"><i data-lucide="layers"></i></a>
+        <a href="projects.php"><i data-lucide="briefcase"></i></a>
+        <a href="skills.php"><i data-lucide="cpu"></i></a>
+        <a href="contact.php"><i data-lucide="mail"></i></a>
       </div>
     </div>
 
