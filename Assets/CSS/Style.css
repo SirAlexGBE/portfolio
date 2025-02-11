@@ -1,10 +1,4 @@
 /* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Libre Franklin", sans-serif;
-}
 
 body {
   background: #1d1c1d;
@@ -28,6 +22,7 @@ body {
 /* Profile Card */
 .profile-card {
   width: 350px;
+  color: #7d7373;
   background: #1d1c1d;
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -57,12 +52,12 @@ body {
 
 .location {
   font-size: 18px;
-  color: white;
+  color: #7d7373;
 }
 
 .position {
   font-size: 16px;
-  color: #f2f0f0;
+  color: #7d7373;
 }
 
 /* Social Icons */
@@ -129,7 +124,7 @@ body {
 .main-content {
   color: white;
   flex: 2;
-  max-width: 600px;
+  max-width: 700px;
 }
 
 .headline {
@@ -142,8 +137,8 @@ body {
 }
 
 .description {
-  font-size: 16px;
-  color: #cfcfcf;
+  font-size: 18px;
+  color: #7d7373;
   margin-top: 10px;
 }
 
@@ -161,7 +156,7 @@ body {
 }
 
 .stat p {
-  color: white;
+  color: #7d7373;
 }
 
 /* Sidebar */
@@ -221,6 +216,27 @@ body {
     justify-content: center;
   }
 }
+.about-heading {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-intro,
+.about-mission {
+  font-size: 18px;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ff5c00;
+  font-weight: bold;
+}
+
+.bold {
+  font-weight: bold;
+}
 
 @media (max-width: 768px) {
   .hire-btn {
@@ -238,6 +254,79 @@ body {
   }
 }
 
+.education-experience {
+  max-width: 700px;
+  color: white;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-bottom: 60px;
+}
+
+.section-title .highlight {
+  color: #ff5c00;
+}
+
+/* Timeline Container */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  padding-left: 20px;
+  border-left: 3px solid #ff5c00;
+}
+
+.timeline-item::before {
+  content: "●";
+  position: absolute;
+  left: -10px;
+  top: 3px;
+  font-size: 18px;
+  color: #ff5c00;
+}
+
+/* Year */
+.year {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5c00;
+}
+
+/* Position (Job Title / Degree) */
+.position {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-top: 5px;
+}
+
+/* Company / Institution */
+.company {
+  font-size: 16px;
+  color: #a0a0a0;
+  margin-top: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .education-experience {
+    max-width: 90%;
+  }
+
+  .position {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 480px) {
   .hire-btn {
     font-size: 18px;
@@ -252,4 +341,330 @@ body {
   .social-icons a {
     font-size: 20px;
   }
+}
+/* Specializations Section */
+.specializations {
+  max-width: 750px;
+  color: white;
+  text-align: left;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title .highlight {
+  color: #ff5c00;
+}
+
+/* Specialization Boxes */
+.specialization-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #ff5c00;
+  border-radius: 17px;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+/* Hover Effect */
+.specialization-box:hover {
+  background: rgba(255, 92, 0, 0.1);
+  transform: translateY(-3px);
+}
+
+/* Specialization Icons - Minimalist & Positioned at Top */
+.specialization-icon {
+  font-size: 20px; /* Smaller Icon */
+  color: #ff5c00;
+  padding: 8px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+/* Specialization Content */
+.specialization-content {
+  margin-top: 20px; /* Push text below icon */
+}
+
+.specialization-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.specialization-description {
+  font-size: 16px;
+  color: #7d7373;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .specializations {
+    max-width: 90%;
+  }
+
+  .specialization-box {
+    padding: 15px;
+  }
+
+  .specialization-icon {
+    font-size: 20px; /* Smaller on mobile */
+    top: -10px;
+    left: 15px;
+    padding: 6px;
+  }
+}
+/* Skills Section */
+.skills {
+  max-width: 900px;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section-title .highlight {
+  color: #ff5c00;
+}
+
+/* Skills Container */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Skill Card */
+.skill-card {
+  background: #1c1b1b;
+  border: 1px solid #ff5c00;
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.skill-card:hover {
+  background: rgba(255, 92, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Skill Icon (SVG Customization) */
+.skill-icon img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+/* Skill Name */
+.skill-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-top: 10px;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Progress Fill (Animated) */
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: #ff5c00;
+  border-radius: 10px;
+  transition: width 2s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.contact {
+  max-width: 700px;
+  color: white;
+  text-align: left;
+  margin: auto;
+}
+.contact-subtext {
+  font-size: 18px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ff5c00;
+  margin-bottom: 5px;
+}
+
+/* Input & Textarea */
+.form-group input,
+.form-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ff5c00;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Input Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid white;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #ff5c00;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+  background: #e65c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    max-width: 90%;
+  }
+}
+/* Portfolio Section */
+.portfolio {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section-title .highlight {
+  color: #ff5c00;
+}
+
+/* Project Card */
+.project-card {
+  background: #1c1b1b;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(255, 92, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 92, 0, 0.4);
+}
+
+/* Project Title */
+.project-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+/* Project Description */
+.project-description {
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-bottom: 10px;
+}
+
+/* Technologies Used */
+.project-tech {
+  font-size: 14px;
+  color: #7d7373;
+  margin-bottom: 15px;
+}
+
+/* Project Links */
+.project-links a {
+  font-size: 20px;
+  color: #ff5c00;
+  margin-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.project-links a:hover {
+  color: white;
+}
+
+/* Hide Bootstrap Carousel Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
 }
