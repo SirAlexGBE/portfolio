@@ -78,10 +78,6 @@
       <p class="company">ISMT College, Chitwan</p>
     </div>
 </section>
-
-
-
-
       <!-- Sidebar -->
       <div class="sidebar navbar navbar-expand-lg navbar-light">
         <a href="index.php"><i data-lucide="home"></i></a>
