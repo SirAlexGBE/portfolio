@@ -65,6 +65,11 @@
       <h3 class="position">Front-End Developer & UI/UX Designer</h3>
       <p class="company">Freelance</p>
     </div>
+    <div class="timeline-item">
+      <span class="year">2024 - Present</span>
+      <h3 class="position">Fullstack Developer</h3>
+      <p class="company">Freelance</p>
+    </div>
 
     <!-- Education -->
     <div class="timeline-item">

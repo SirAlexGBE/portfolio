@@ -128,10 +128,35 @@
       </div>
       <p class="skill-name">React JS</p>
     </div>
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Assets/Icons/python.svg" alt="Python" />
+      </div>
+      <div class="progress-bar" data-percent="15">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="skill-name">Python</p>
+    </div>
+    <!-- <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Assets/Icons/C.svg" alt="C" />
+      </div>
+      <div class="progress-bar" data-percent="69">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="skill-name">C</p>
+    </div> -->
+    <div class="skill-card">
+      <div class="skill-icon">
+        <img src="Assets/Icons/C2.svg" alt="C#" />
+      </div>
+      <div class="progress-bar" data-percent="69">
+        <div class="progress-fill"></div>
+      </div>
+      <p class="skill-name">C#</p>
+    </div>
+
   </div>
-</section>
-
-
 </section>
 
 
